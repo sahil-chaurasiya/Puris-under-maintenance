@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="page">
@@ -30,39 +32,15 @@ export default function Home() {
         </address>
       </section>
 
-      <section className="drop-wrap" aria-hidden="true">
-        <svg viewBox="0 0 200 260" className="drop">
-          <defs>
-            <clipPath id="dropClip">
-              <path d="M100 8C100 8 20 100 20 160a80 80 0 0 0 160 0C180 100 100 8 100 8Z" />
-            </clipPath>
-          </defs>
-
-          <path
-            className="drop-bg"
-            d="M100 8C100 8 20 100 20 160a80 80 0 0 0 160 0C180 100 100 8 100 8Z"
-          />
-
-          <g clipPath="url(#dropClip)">
-            <g className="level">
-              <g className="wave back">
-                <path d="M0 20Q25 0 50 20T100 20T150 20T200 20T250 20T300 20T350 20T400 20V300H0Z" />
-              </g>
-              <g className="wave front">
-                <path d="M0 22Q25 42 50 22T100 22T150 22T200 22T250 22T300 22T350 22T400 22V300H0Z" />
-              </g>
-            </g>
-            <circle className="bubble b1" cx="80" cy="230" r="4" />
-            <circle className="bubble b2" cx="118" cy="240" r="6" />
-            <circle className="bubble b3" cx="100" cy="225" r="3" />
-          </g>
-
-          <path
-            className="shine"
-            d="M58 150c0-24 14-48 28-68"
-            fill="none"
-          />
-        </svg>
+      <section className="bottle-wrap">
+        <Image
+          src="/puris-bottle.png"
+          alt="Puris Packaged Drinking Water 1 litre bottle"
+          width={496 * 0.58}
+          height={900 * 0.58}
+          className="bottle"
+          priority
+        />
       </section>
     </main>
   );
