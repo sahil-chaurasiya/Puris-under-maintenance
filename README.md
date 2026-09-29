@@ -1,4 +1,6 @@
-# Puris Water – Maintenance Page
+# Puris Water – Website
+
+Single-page site for Puris Water / Purova (Next.js App Router).
 
 ```bash
 npm install
