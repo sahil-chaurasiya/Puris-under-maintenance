@@ -210,6 +210,7 @@ export default function Home() {
 
       <footer className="foot">
         <div className="wrap">
+          <Image src="/logo-white.png" alt="Puris" width={700} height={662} className="foot-logo" />
           <span>&copy; {new Date().getFullYear()} Puris Food &amp; Beverages. Purova&trade; is a trademark of its owner.</span>
           <span>FSSAI Lic. No. 11422030000121</span>
         </div>

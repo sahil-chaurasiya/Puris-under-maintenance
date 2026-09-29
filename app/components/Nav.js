@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
   ["About", "#about"],
@@ -16,11 +17,8 @@ export default function Nav() {
   return (
     <header className="nav">
       <div className="nav-in">
-        <a className="logo" href="#top" onClick={() => setOpen(false)}>
-          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-            <path d="M12 2C8 8 5 11.5 5 15a7 7 0 0 0 14 0c0-3.5-3-7-7-13z" fill="currentColor" />
-          </svg>
-          Puris Water
+        <a className="logo" href="#top" aria-label="Puris Water, back to top" onClick={() => setOpen(false)}>
+          <Image src="/logo-navy.png" alt="Puris" width={700} height={662} priority />
         </a>
         <button
           className="burger"
