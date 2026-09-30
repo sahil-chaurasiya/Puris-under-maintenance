@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import Image from "next/image";
 import Nav from "./components/Nav";
+import HeroBanner from "./components/HeroBanner";
 import Icon from "./components/Icon";
 import EnquiryForm from "./components/EnquiryForm";
 import { steps, zones, serves } from "./data";
@@ -41,6 +42,8 @@ export default function Home() {
       <Nav />
 
       <main id="top">
+        <HeroBanner />
+
         {/* HERO */}
         <section className="hero">
           <div className="bubbles" aria-hidden="true">{Array.from({ length: 14 }, (_, i) => <i key={i} style={{ "--i": i }} />)}</div>
@@ -141,7 +144,7 @@ export default function Home() {
           <div className="wrap">
             <h2>Four sizes of Purova</h2>
             <div className="range">
-              <Image src="/purova-range.jpg" alt="Purova bottles in 2 litre, 1 litre, 500 ml and 250 ml" width={1476} height={1600} sizes="(max-width: 860px) 100vw, 620px" className="range-img" />
+              <Image src="/puris-range-poster.jpg" alt="Puris packaged drinking water bottles in four sizes: 2 litre, 1 litre, 500 ml and 250 ml" width={1122} height={1402} sizes="(max-width: 860px) 100vw, 620px" className="range-img" />
               <div>
                 <ul className="sizes">{sizes.map(([s, u]) => <li key={s}><strong>{s}</strong><span>{u}</span></li>)}</ul>
                 <div className="classic">
