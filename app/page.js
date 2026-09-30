@@ -112,7 +112,7 @@ export default function Home() {
                 <figcaption><strong>Steps 7 and 8</strong> Filled, capped and labelled on our filling line.</figcaption>
               </figure>
               <figure>
-                <div className="shot"><Image src="/process-packing.jpg" alt="Bottles being shrink-wrapped into packs" fill sizes="(max-width: 520px) 100vw, 400px" style={{ objectFit: "cover" }} /></div>
+                <div className="shot"><Image src="/process-packing.jpeg" alt="Bottles being shrink-wrapped into packs" fill sizes="(max-width: 520px) 100vw, 400px" style={{ objectFit: "cover" }} /></div>
                 <figcaption><strong>Then packed</strong> Bottles are shrink-wrapped into packs for dispatch.</figcaption>
               </figure>
             </div>
