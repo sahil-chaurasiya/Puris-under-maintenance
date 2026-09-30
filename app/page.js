@@ -20,7 +20,7 @@ const why = [
   ["Best within 6 months", "Drink within six months of manufacture, then crush the bottle."],
 ];
 const faqs = [
-  ["What is Purova?", "Purova is our packaged drinking water with added minerals, made by Puris Food & Beverages in Mandideep, Madhya Pradesh."],
+  ["What is Puris?", "Puris is our packaged drinking water with added minerals, made by Puris Food & Beverages in Mandideep, Madhya Pradesh."],
   ["Which sizes can I order?", "2 litre, 1 litre, 500 ml and 250 ml."],
   ["How long does a bottle stay good?", "Best before 6 months from the date of manufacture, printed on the bottle."],
   ["Can I order in bulk or become a dealer?", "Yes. Fill in the enquiry form or call +91 91117 77175."],
@@ -51,7 +51,7 @@ export default function Home() {
             <div className="hero-copy">
               <p className="pill">Puris Food &amp; Beverages, Mandideep</p>
               <h1>Pure water, packed with care.</h1>
-              <p className="lead">Purova is packaged drinking water with added minerals, treated, tested and bottled at our own plant in Mandideep.</p>
+              <p className="lead">Puris is packaged drinking water with added minerals, treated, tested and bottled at our own plant in Mandideep.</p>
               <div className="actions">
                 <a className="btn solid" href="#enquire">Order or become a dealer</a>
                 <a className="btn line" href="#process">See how it&rsquo;s made</a>
@@ -59,7 +59,7 @@ export default function Home() {
             </div>
             <div className="hero-art">
               <span className="ring" aria-hidden="true" />
-              <span className="vword" aria-hidden="true">PUROVA</span>
+              <span className="vword" aria-hidden="true">PURIS</span>
               <Image src="/puris-bottle.png" alt="Puris packaged drinking water 1 litre bottle" width={375} height={665} priority sizes="(max-width: 860px) 60vw, 380px" className="hero-bottle" />
               <span className="chip c1">With added minerals</span>
               <span className="chip c2">FSSAI licensed</span>
@@ -84,7 +84,7 @@ export default function Home() {
             <Image src="/puris-bottle.png" alt="Puris packaged drinking water 1 litre bottle" width={375} height={665} sizes="(max-width: 860px) 70vw, 340px" className="photo photo-png" />
             <div>
               <h2>Made close to home, checked bottle by bottle.</h2>
-              <p className="lead">Puris Food &amp; Beverages runs its own bottling unit in the New Industrial Area, Mandideep. Purova is the label we put our name behind.</p>
+              <p className="lead">Puris Food &amp; Beverages runs its own bottling unit in the New Industrial Area, Mandideep. Puris is the label we put our name behind.</p>
               <dl className="why">{why.map(([t, d]) => <div key={t}><dt>{t}</dt><dd>{d}</dd></div>)}</dl>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default function Home() {
           <Wave fill="#fff" flip />
           <div className="wrap">
             <h2>From source to sealed cap in eight steps.</h2>
-            <p className="lead light">Every bottle of Purova follows the same path, so every bottle tastes the same.</p>
+            <p className="lead light">Every bottle of Puris follows the same path, so every bottle tastes the same.</p>
             <ol className="steps">
               {steps.map((s, i) => (
                 <li key={s.title}>
@@ -142,7 +142,7 @@ export default function Home() {
         {/* RANGE */}
         <section id="range" className="sec tint">
           <div className="wrap">
-            <h2>Four sizes of Purova</h2>
+            <h2>Four sizes of Puris</h2>
             <div className="range">
               <Image src="/puris-range-poster.jpg" alt="Puris packaged drinking water bottles in four sizes: 2 litre, 1 litre, 500 ml and 250 ml" width={1122} height={1402} sizes="(max-width: 860px) 100vw, 620px" className="range-img" />
               <div>
@@ -214,7 +214,7 @@ export default function Home() {
       <footer className="foot">
         <div className="wrap">
           <Image src="/logo-white.png" alt="Puris" width={700} height={662} className="foot-logo" />
-          <span>&copy; {new Date().getFullYear()} Puris Food &amp; Beverages. Purova&trade; is a trademark of its owner.</span>
+          <span>&copy; {new Date().getFullYear()} Puris Food &amp; Beverages. Puris&trade; is a trademark of its owner.</span>
           <span>FSSAI Lic. No. 11422030000121</span>
         </div>
       </footer>
